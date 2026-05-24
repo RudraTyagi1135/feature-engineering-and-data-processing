@@ -1,435 +1,601 @@
-# Feature Engineering and Data Processing
+# ⚙️ Feature Engineering and Data Processing Systems
 
-A master repository of machine learning projects focused on exploratory data analysis, preprocessing, feature engineering, class imbalance handling, and Scikit-learn pipeline design.
+<p align="center">
 
-This repository is organized as a collection of focused notebook-based projects. Each folder represents a major stage of the machine learning workflow, and each subproject demonstrates a specific practical technique used to prepare data for reliable model development.
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-ML_Pipelines-orange?style=for-the-badge&logo=scikitlearn)
+![Feature Engineering](https://img.shields.io/badge/Feature-Engineering-green?style=for-the-badge)
+![EDA](https://img.shields.io/badge/EDA-Analytics-purple?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Research_Workspace-success?style=for-the-badge)
 
-## Project Purpose
+</p>
 
-Real-world machine learning systems depend heavily on data quality, preprocessing choices, and feature design. This repository demonstrates practical techniques used before and during model development, including:
+---
 
-- Exploratory data analysis
-- Data cleaning and standardization
-- Feature transformation
-- Feature scaling
-- Missing value imputation
-- Outlier and anomaly detection
-- Class imbalance handling
-- Feature discretization and binning
-- Categorical encoding
-- Scikit-learn pipeline construction
-- Text preprocessing and NLP analysis
+# 📌 Repository Overview
 
-The goal is to move from isolated notebook experiments toward reliable, reusable, production-oriented ML preprocessing systems.
+This repository is a large-scale machine learning preprocessing and feature engineering workspace focused on:
 
-## Repository Structure
+- exploratory data analysis
+- preprocessing systems
+- feature engineering workflows
+- anomaly detection
+- class imbalance handling
+- Scikit-learn pipeline architecture
+- NLP preprocessing
+- ML-ready data transformation systems
+
+The repository is organized as a collection of notebook-driven analytical systems where each subproject demonstrates a practical preprocessing or feature engineering workflow commonly used in real-world machine learning pipelines.
+
+---
+
+# 🎯 Repository Objective
+
+Modern machine learning systems depend heavily on:
+
+- data quality
+- preprocessing consistency
+- feature engineering strategy
+- pipeline reliability
+
+This repository focuses on the stages that occur before model deployment, including:
+
+```text
+Raw Data
+    ↓
+Inspection & EDA
+    ↓
+Cleaning & Transformation
+    ↓
+Feature Engineering
+    ↓
+Pipeline Construction
+    ↓
+ML-Ready Dataset
+```
+
+The primary goal is to move from isolated notebook experiments toward modular, reusable, and production-oriented preprocessing systems.
+
+---
+
+# 🏗️ Repository Architecture
 
 ```text
 feature-engineering-and-data-processing/
-|
-|-- exploratory_data_analysis/
-|   |-- SMARTPHONE_DATA_CLEANING_PIPELINE/
-|   |-- SMARTPHONE_EDA_PIPELINE/
-|   |-- TEXTUAL_DATA_ANALYSIS/
-|   `-- TITANIC_SURVIVAL_EDA/
-|
-|-- feature_engineering/
-|   |-- FEATURE_ENGINEERING_AND_SKLEARN_PIPELINE/
-|   `-- FEATURE_ENGINEERING_DISCRETIZATION_SYSTEMS/
-|
-|-- imbalance_handling/
-|   `-- IMBALANCED_LEARNING_TECHNIQUE_ANALYSIS/
-|
-|-- preprocessing/
-|   |-- DATA_TRANSFORMATION/
-|   |-- FEATURE_SCALING_TECHNIQUES/
-|   |-- MISSING_VALUE_IMPUTATION_TECHNIQUES/
-|   `-- OUTLIER_DETECTION_TECHNIQUE/
-|
-`-- README.md
+│
+├── exploratory_data_analysis/
+├── preprocessing/
+├── feature_engineering/
+├── imbalance_handling/
+└── README.md
 ```
 
-## Project Categories
+---
 
-## Exploratory Data Analysis
+# 📂 Repository Structure
 
-Projects under `exploratory_data_analysis/` focus on understanding datasets, identifying patterns, visualizing relationships, and preparing analytical insights before modeling.
+```text
+feature-engineering-and-data-processing/
+│
+├── exploratory_data_analysis/
+│   ├── SMARTPHONE_DATA_CLEANING_PIPELINE/
+│   ├── SMARTPHONE_EDA_PIPELINE/
+│   ├── TEXTUAL_DATA_ANALYSIS/
+│   └── TITANIC_SURVIVAL_EDA/
+│
+├── feature_engineering/
+│   ├── FEATURE_ENGINEERING_AND_SKLEARN_PIPELINE/
+│   └── FEATURE_ENGINEERING_DISCRETIZATION_SYSTEMS/
+│
+├── imbalance_handling/
+│   └── IMBALANCED_LEARNING_TECHNIQUE_ANALYSIS/
+│
+├── preprocessing/
+│   ├── DATA_TRANSFORMATION/
+│   ├── FEATURE_SCALING_TECHNIQUES/
+│   ├── MISSING_VALUE_IMPUTATION_TECHNIQUES/
+│   └── OUTLIER_DETECTION_TECHNIQUE/
+│
+└── README.md
+```
 
-### SMARTPHONE_DATA_CLEANING_PIPELINE
+---
 
-Transforms messy smartphone product specifications into a structured ML-ready dataset.
+# 📊 Repository Categories
 
-Covered topics:
+---
 
-- Raw data cleaning
-- Regex-based feature extraction
-- Semi-structured text parsing
-- Smartphone hardware feature engineering
-- Structured dataset generation
+# 🔍 Exploratory Data Analysis Systems
 
-Main files:
+Projects inside:
 
-- `data_cleaning.ipynb`
-- `smartphones.csv`
-- `smartphone_cleaned_v2.csv`
+```text
+exploratory_data_analysis/
+```
 
-### SMARTPHONE_EDA_PIPELINE
+focus on:
+- dataset understanding
+- visualization
+- statistical exploration
+- feature inspection
+- insight generation
 
-Performs exploratory data analysis on cleaned smartphone data.
+before ML model development.
 
-Covered topics:
+---
 
-- Brand analysis
-- Price distribution
-- Rating analysis
-- Hardware feature analysis
-- Feature availability analysis
-- Visualization-driven insights
+## 📱 SMARTPHONE_DATA_CLEANING_PIPELINE
 
-Main files:
+### Purpose
 
-- `smartphone_eda.ipynb`
-- `smartphone_cleaned_v5.csv`
+Transforms messy smartphone specification datasets into structured ML-ready datasets.
 
-### TEXTUAL_DATA_ANALYSIS
+### Covered Topics
 
-Explores IMDB review text data using NLP preprocessing and visualization.
+- regex-based extraction
+- text parsing
+- hardware feature engineering
+- semi-structured data cleaning
+- schema standardization
 
-Covered topics:
+### Demonstrates
 
-- Text cleaning
-- Tokenization
-- N-gram analysis
+- practical data cleaning
+- preprocessing pipelines
+- feature extraction workflows
+
+---
+
+## 📊 SMARTPHONE_EDA_PIPELINE
+
+### Purpose
+
+Performs exploratory analytics on cleaned smartphone datasets.
+
+### Covered Topics
+
+- brand analysis
+- price distribution
+- rating analysis
+- hardware trend analysis
+- visualization-driven insights
+
+### Demonstrates
+
+- analytical storytelling
+- visualization workflows
+- structured EDA systems
+
+---
+
+## 📝 TEXTUAL_DATA_ANALYSIS
+
+### Purpose
+
+Performs NLP-oriented analysis on IMDB review datasets.
+
+### Covered Topics
+
+- text cleaning
+- tokenization
+- word frequency analysis
+- N-grams
 - WordCloud visualization
-- Sentiment-based text exploration
 
-Main files:
+### Demonstrates
 
-- `movie_analysis.ipynb`
-- `IMDB Dataset.csv`
+- NLP preprocessing
+- textual analytics workflows
+- unstructured data analysis
 
-### TITANIC_SURVIVAL_EDA
+---
 
-Performs structured exploratory analysis on the Titanic survival dataset.
+## 🚢 TITANIC_SURVIVAL_EDA
 
-Covered topics:
+### Purpose
 
-- Data inspection
-- Missing value analysis
-- Univariate analysis
-- Bivariate analysis
-- Correlation analysis
-- Survival pattern discovery
+Performs structured EDA on the Titanic survival dataset.
 
-Main files:
+### Covered Topics
 
-- `eda_titanic.ipynb`
-- `train.csv`
-- `test.csv`
+- missing value analysis
+- univariate analysis
+- bivariate analysis
+- survival pattern exploration
+- correlation analysis
 
-## Preprocessing
+### Demonstrates
 
-Projects under `preprocessing/` focus on preparing raw or imperfect data for modeling through transformations, scaling, imputation, and anomaly handling.
+- statistical exploration
+- ML dataset inspection
+- exploratory analytics workflows
 
-### DATA_TRANSFORMATION
+---
 
-Explores feature transformation techniques used to improve data distribution and model compatibility.
+# ⚙️ Preprocessing Systems
 
-Covered topics:
+Projects inside:
 
-- Log transformation
-- Reciprocal transformation
-- Square root transformation
-- Exponential transformation
-- Polynomial feature engineering
-- Distribution analysis using KDE and Q-Q plots
+```text
+preprocessing/
+```
 
-Main files:
+focus on preparing raw datasets for machine learning.
 
-- `feature_engineering_and_transformation_techniques.ipynb`
-- `titanic_feature_transformation_analysis.ipynb`
+---
 
-### FEATURE_SCALING_TECHNIQUES
+## 🔄 DATA_TRANSFORMATION
 
-Demonstrates core scaling techniques and their impact on model readiness.
+### Covered Topics
 
-Covered topics:
+- log transformation
+- reciprocal transformation
+- square root transformation
+- exponential transformation
+- polynomial feature engineering
+
+### Demonstrates
+
+- distribution normalization
+- transformation strategies
+- model compatibility optimization
+
+---
+
+## 📏 FEATURE_SCALING_TECHNIQUES
+
+### Covered Topics
 
 - Min-Max scaling
-- Standardization
-- Before/after distribution visualization
-- Scale-sensitive model behavior
+- standardization
+- distribution comparison
+- scale-sensitive model behavior
 
-Main files:
+### Demonstrates
 
-- `feature_scaling_minmax.ipynb`
-- `feature_scaling_standardization.ipynb`
+- preprocessing normalization workflows
+- feature scaling engineering
 
-### MISSING_VALUE_IMPUTATION_TECHNIQUES
+---
 
-Compares missing value handling strategies using the Titanic dataset.
+## 🩹 MISSING_VALUE_IMPUTATION_TECHNIQUES
 
-Covered topics:
+### Covered Topics
 
-- Missing value analysis
-- Mean and median imputation
+- mean imputation
+- median imputation
 - KNN imputation
-- Iterative imputation
-- Pipeline-based imputation
-- GridSearchCV integration
+- iterative imputation
+- pipeline-based imputation
 
-Main files:
+### Demonstrates
 
-- `01_missing_values_analysis_titanic.ipynb`
-- `02_manual_missing_value_imputation_demo.ipynb`
-- `03_knn_imputation_titanic_classification.ipynb`
-- `04_iterative_imputation_random_forest_titanic.ipynb`
-- `05_pipeline_imputation_with_gridsearch_titanic.ipynb`
+- missing data strategies
+- robust preprocessing systems
+- pipeline-driven imputation workflows
 
-### OUTLIER_DETECTION_TECHNIQUE
+---
 
-Demonstrates statistical and machine learning-based anomaly detection techniques.
+## 🚨 OUTLIER_DETECTION_TECHNIQUE
 
-Covered topics:
+### Covered Topics
 
-- Z-score outlier detection
-- IQR-based outlier detection
+- Z-score analysis
+- IQR outlier detection
 - Isolation Forest
 - KNN anomaly detection
 - Local Outlier Factor
 - DBSCAN
 
-Main files:
+### Demonstrates
 
-- `outlier_detection_zscore_method.ipynb`
-- `outlier_detection_iqr_method.ipynb`
-- `multivariate_anomaly_detection_method.ipynb`
+- anomaly detection systems
+- statistical outlier handling
+- unsupervised preprocessing workflows
 
-## Feature Engineering
+---
 
-Projects under `feature_engineering/` focus on transforming raw variables into useful model inputs and building reusable Scikit-learn preprocessing systems.
+# 🧠 Feature Engineering Systems
 
-### FEATURE_ENGINEERING_AND_SKLEARN_PIPELINE
-
-Builds reusable Scikit-learn preprocessing and modeling pipelines.
-
-Covered topics:
-
-- Custom Scikit-learn estimators
-- `Pipeline`
-- `ColumnTransformer`
-- Ordinal encoding
-- One-hot encoding
-- Schema mismatch handling
-- Unknown category handling
-- Pipeline serialization
-
-Main files:
-
-- `01_custom_sklearn_estimator_and_model_evaluation.ipynb`
-- `02_feature_engineering_pipeline_with_column_transformer.ipynb`
-- `03_categorical_encoding_strategies_ordinal_vs_onehot.ipynb.ipynb`
-- `pipe.pkl`
-
-### FEATURE_ENGINEERING_DISCRETIZATION_SYSTEMS
-
-Focuses on feature binning and discretization for improving model behavior, especially with linear models and non-linear relationships.
-
-Covered topics:
-
-- Manual binning
-- Uniform binning
-- Quantile binning
-- `KBinsDiscretizer`
-- One-hot encoding after binning
-- Bias-variance trade-offs
-
-Main files:
-
-- `feature_binning_strategies.ipynb`
-- `discretization_for_model_performance.ipynb`
-
-## Imbalance Handling
-
-Projects under `imbalance_handling/` focus on classification problems where one class is significantly underrepresented.
-
-### IMBALANCED_LEARNING_TECHNIQUE_ANALYSIS
-
-Analyzes classification behavior on imbalanced datasets and compares resampling strategies.
-
-Covered topics:
-
-- Baseline model behavior on imbalanced data
-- Random oversampling
-- SMOTE
-- Tomek Links
-- Edited Nearest Neighbors
-- Neighbourhood Cleaning Rule
-- Precision, recall, F1-score, and confusion matrix evaluation
-
-Main files:
-
-- `01-imbalanced-data-baseline-model-analysis.ipynb`
-- `02-oversampling-methods-smote-ros-comparison.ipynb`
-- `03-undersampling-methods-tomek-enn-ncr-analysis.ipynb`
-
-## Common Workflow
-
-Most subprojects follow this general workflow:
+Projects inside:
 
 ```text
-Raw Data
-   |
-   v
-Data Inspection
-   |
-   v
-Cleaning / Preprocessing
-   |
-   v
-Feature Engineering
-   |
-   v
-Visualization / Evaluation
-   |
-   v
-ML-ready Output or Insight
+feature_engineering/
 ```
 
-## Tech Stack
+focus on transforming raw variables into model-ready features.
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- imbalanced-learn
-- Matplotlib
-- Seaborn
-- Plotly
-- Missingno
-- WordCloud
-- Jupyter Notebook
+---
 
-## Installation
+## ⚙️ FEATURE_ENGINEERING_AND_SKLEARN_PIPELINE
 
-Each subproject has its own `requirements.txt`. Install dependencies from the specific project you want to run.
+### Covered Topics
 
-Example:
+- Scikit-learn `Pipeline`
+- `ColumnTransformer`
+- custom estimators
+- ordinal encoding
+- one-hot encoding
+- pipeline serialization
+
+### Demonstrates
+
+- reusable ML pipelines
+- modular preprocessing architecture
+- production-oriented feature engineering
+
+---
+
+## 📦 FEATURE_ENGINEERING_DISCRETIZATION_SYSTEMS
+
+### Covered Topics
+
+- manual binning
+- quantile binning
+- `KBinsDiscretizer`
+- one-hot encoding after discretization
+
+### Demonstrates
+
+- discretization workflows
+- feature binning strategies
+- model behavior optimization
+
+---
+
+# ⚖️ Imbalance Handling Systems
+
+Projects inside:
+
+```text
+imbalance_handling/
+```
+
+focus on classification systems with skewed target distributions.
+
+---
+
+## ⚖️ IMBALANCED_LEARNING_TECHNIQUE_ANALYSIS
+
+### Covered Topics
+
+- SMOTE
+- random oversampling
+- Tomek Links
+- ENN
+- NCR
+- baseline imbalance evaluation
+
+### Demonstrates
+
+- imbalanced ML workflows
+- sampling strategies
+- precision/recall trade-offs
+
+---
+
+# 🔄 Common ML Workflow
+
+Most subprojects follow this structure:
+
+```text
+Raw Dataset
+      ↓
+Data Inspection
+      ↓
+Cleaning & Preprocessing
+      ↓
+Feature Engineering
+      ↓
+Visualization & Evaluation
+      ↓
+ML-Ready Dataset
+```
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Programming | Python |
+| ML Frameworks | Scikit-learn, XGBoost |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn, Plotly |
+| NLP | WordCloud |
+| Imbalance Handling | imbalanced-learn |
+| Missing Data Analysis | Missingno |
+| Development Environment | Jupyter Notebook |
+
+---
+
+# ⚙️ Installation
+
+Each subproject contains its own:
+
+```text
+requirements.txt
+```
+
+Example setup:
 
 ```bash
 cd feature_engineering/FEATURE_ENGINEERING_AND_SKLEARN_PIPELINE
+
 python -m venv .venv
+
 .venv\Scripts\activate
+
 pip install -r requirements.txt
 ```
 
-For Linux or macOS:
+---
 
-```bash
-source .venv/bin/activate
-```
+# ▶️ Running Projects
 
-## Running a Project
+Most workflows are notebook-driven.
 
-Open the target subproject and start Jupyter Notebook:
+Start Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
-
-Then run the notebooks listed in that subproject's README.
 
 Example:
 
 ```bash
 cd preprocessing/MISSING_VALUE_IMPUTATION_TECHNIQUES
+
 jupyter notebook
 ```
 
-## Current Architecture
+---
 
-This repository is currently notebook-first. It is useful for experimentation, learning, comparison, and documenting preprocessing behavior.
+# 📊 Engineering Highlights
 
-Current characteristics:
+- Modular preprocessing systems
+- Scikit-learn pipeline engineering
+- Reusable feature engineering workflows
+- Imbalanced learning systems
+- NLP preprocessing workflows
+- Statistical anomaly detection
+- Structured EDA pipelines
+- Production-oriented preprocessing architecture
+- ML-ready data transformation systems
 
-- Domain-grouped project folders
-- Notebook-based workflows
-- Local CSV datasets
-- Independent subproject folders
-- Per-project dependency files
-- Some serialized model/pipeline artifacts
-- No shared root package yet
-- No root-level API service yet
+---
 
-## Production Upgrade Path
+# 🧠 Production Engineering Direction
 
-The natural next step is to convert the strongest workflows into a modular ML system.
+The repository currently follows a notebook-first architecture.
 
-Recommended target architecture:
+Recommended production architecture:
 
 ```text
 src/
-|
-|-- config/
-|-- data/
-|-- features/
-|-- models/
-|-- pipelines/
-|-- api/
-|-- logging/
-`-- utils/
+│
+├── config/
+├── data/
+├── features/
+├── models/
+├── pipelines/
+├── api/
+├── logging/
+└── utils/
 ```
 
-Recommended improvements:
+---
 
-- Add a shared `config.yaml`
-- Move reusable logic from notebooks into Python modules
-- Add data validation with Pydantic or Great Expectations
-- Add structured logging
-- Add experiment tracking with MLflow
-- Add model and prediction logging
-- Add FastAPI inference endpoints
-- Store artifacts and datasets in AWS S3
-- Package training jobs for AWS SageMaker
-- Add Lambda-compatible lightweight inference where suitable
-- Add Airflow DAGs for scheduled data and model workflows
+# ☁️ Cloud & MLOps Upgrade Path
 
-## Deployment Direction
+Recommended future upgrades include:
 
-The long-term deployment direction should support:
+| Area | Future Direction |
+|---|---|
+| Inference APIs | FastAPI |
+| Artifact Storage | AWS S3 |
+| Training Infrastructure | AWS SageMaker |
+| Monitoring | CloudWatch |
+| Orchestration | Airflow |
+| Experiment Tracking | MLflow |
+| Validation | Great Expectations |
+| Logging | Structured logging pipelines |
 
-- FastAPI for model inference
-- AWS S3 for data and model artifacts
-- AWS SageMaker for training and batch inference
-- AWS Lambda for lightweight event-driven inference
-- CloudWatch for logs and monitoring
-- Airflow for orchestration
+---
 
-Any production inference service should log all predictions with:
+# 📈 Potential Future Improvements
 
-- Request timestamp
-- Model version
-- Input schema version
-- Prediction output
-- Confidence or score where available
-- Runtime errors or validation failures
+Planned enhancements include:
 
-## Learning Outcomes
+- modular Python packages
+- FastAPI inference endpoints
+- MLflow experiment tracking
+- Great Expectations validation
+- Docker containerization
+- AWS deployment workflows
+- Airflow orchestration
+- distributed preprocessing pipelines
+- real-time feature engineering systems
+- production inference logging
+
+---
+
+# 🎯 What This Repository Demonstrates
 
 This repository demonstrates practical understanding of:
 
-- Data preprocessing fundamentals
-- Feature engineering techniques
-- Exploratory data analysis
-- Scikit-learn pipeline design
-- Model evaluation trade-offs
-- Handling noisy, missing, imbalanced, and unstructured data
-- Organizing ML projects by workflow stage
-- Preparing notebook experiments for production ML systems
+- feature engineering systems
+- preprocessing workflows
+- EDA methodologies
+- Scikit-learn pipeline architecture
+- anomaly detection systems
+- NLP preprocessing
+- imbalanced learning techniques
+- ML-ready dataset preparation
+- modular ML workflow organization
 
-## Author
+---
 
-Rudra Tyagi
+# 📌 Strategic Engineering Value
 
-ML Systems | MLOps | AI Infrastructure
+This repository demonstrates substantially more engineering depth than isolated ML notebooks because it includes:
+
+- modular workflow organization
+- preprocessing architecture
+- reusable ML pipelines
+- structured feature engineering systems
+- anomaly detection workflows
+- imbalance handling systems
+- production-oriented ML preparation design
+
+---
+
+# 📸 Recommended Screenshot Section
+
+Add screenshots for stronger recruiter impact:
+
+```markdown
+![EDA Workflow](your-image-link)
+![Pipeline Architecture](your-image-link)
+![Feature Engineering Analysis](your-image-link)
+```
+
+---
+
+# 👨‍💻 Author
+
+## Rudra Tyagi
+
+### Focus Areas
+
+- ML Systems
+- MLOps
+- AI Infrastructure
+- Feature Engineering Systems
+- Applied Machine Learning
+
+---
+
+# ⭐ Recruiter Notes
+
+This repository demonstrates:
+
+- preprocessing engineering
+- feature engineering systems
+- Scikit-learn pipeline architecture
+- ML workflow organization
+- anomaly detection workflows
+- production-oriented ML preparation
+
+---
+
+# 📜 License
+
+This repository is intended for educational, research, and portfolio purposes.
+
+---
+
+# ⭐ Support
+
+If you found this repository useful, consider giving it a ⭐ on GitHub.
